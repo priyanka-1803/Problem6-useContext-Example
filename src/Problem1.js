@@ -1,16 +1,20 @@
-import {useState} from 'react'
+
 
 const Problem1 =()=>{
-    const [show,setshow] = useState(true)
-    const handleClick = () =>{
-        setshow(!show);
-    }
-    console.log(show)
+    const myArray = [
+        {id:"1", name:'Priyanka'},
+        {id:'2', name:'Pallavi'},
+        {id:'3', name:'Anushka'}
+    ]
+   
     return (
-        <>
-       {show?<h1>Helloworld</h1>:""}
-        <button onClick={handleClick}>Show/Hide</button>
-        </>
+    <>
+    <ul>
+        {myArray.map((user, index) =>{
+            <li key={index}>{user.name}</li>
+        })}
+    </ul>        
+    </>
     )
 }
 
