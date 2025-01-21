@@ -1,0 +1,5 @@
+//Example for useContext hook
+
+//we have two buttons named english and spanish in LanguageSelector Component
+
+//We need to display the language based on the button selected in LanguageDisplay Component 
